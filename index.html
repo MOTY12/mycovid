@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<style>
+  html{
+    background-image:url('covid.jpeg');
+    margin: 0;
+  }
+  h1{
+    background-color: maroon;
+    color: white;
+    margin-top: 0;
+    height: 50px;
+  }
+  body{
+    margin:0;
+    
+  }
+  form{
+    background-position: center;
+    background-color: maroon;
+    margin-left: 360px;
+    padding-top: 54px;
+    height: 500px;
+    width: 34%;
+    opacity: 0.8;
+    font-size: 35px;
+    font-family: bold;
+    padding-left: 150px; border: solid;border-color: white;border-width: 9PX;
+    border-radius: 30px;
+  }
+  label{
+    margin-left: 30px;
+  }
+</style>
+<html>
+  <head>
+   <center> <h1 class="input-field col s6">coronavirus(covid-19) Estimator </h1></center>
+ <form method="post" action="estimator.php" class="input-field col s12">
+  <div class="input-field col s12">
+<label for="reportedcases" required>Reported Cases</label><br>
+<input  type="text" name="reportedcases" attribute="data-reported-cases" style="width: 300px;height: 20px;" required><br>
+</div>
+<div class="input-field col s12">
+
+<label for="period">Time To Elapse</label><br>
+<input type="text" name="timeToElapse" attribute="" style="width: 300px;height: 20px;"required>
+</div>
+<label for="period">Period Type</label><br>
+<select id="period" name="periodType" attribute="data-period-type"  style="width: 300px;height: 20px;" required>
+<option value="" ></option>
+  <option value="day">day</option>
+  <option value="week">week</option>
+  <option value="month">month</option>
+</select><br>
+<div class="input-field col s12">
+<label for="totalHospitalBeds" >Total Hospital Beds</label><br>
+<input type="text" name="totalHospitalBeds" attribute="data-total-hospital-beds" style="width: 300px;height: 20px;" required><br>
+</div>
+<div class="input-field col s12">
+  <label for="totalHospitalBeds" >Population</label><br>
+  <input type="text" name="Population" attribute="data-total-hospital-beds" style="width: 300px;height: 20px;" required><br>
+  </div>
+<input type="submit" value="Data-Go-Estimate" attribute="Data-Go-Estimate" 
+style="color: maroon;width: 150px;height: 45px;font-size: 15px;margin-left: 70PX;margin-top: 10px;border-radius: 10px;" >
+<br>
+ </form>
+</body>
+</html>
+    

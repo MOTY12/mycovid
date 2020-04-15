@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
-<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>covid-19</title>
-   <center> <h1 class="input-field col s6">coronavirus(covid-19) Estimator </h1></center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   
+      
+         <title>covid-19</title>
+   <center> <h1>coronavirus(covid-19) Estimator </h1></center>
   </head>
 <style>
   html{
@@ -38,33 +40,45 @@
     margin-left: 30px;
   }
 </style>
-<html>
-  
-   <form method="post" action="estimator.php" class="input-field col s12">
-  <div class="input-field col s12">
-<label for="reportedcases" required>Reported Cases</label><br>
-<input  type="text" name="reportedcases" attribute="data-reported-cases" style="width: 300px;height: 20px;" required><br>
-</div>
-<div class="input-field col s12">
 
-<label for="period">Time To Elapse</label><br>
-<input type="text" name="timeToElapse" attribute="" style="width: 300px;height: 20px;"required>
+
+   <form method="post" action="estimator.php">
+  <div>
+<label for="reportedcases">Reported Cases<br>
+<input  type="text" name="reportedcases" attribute="data-reported-cases" style="width: 300px;height: 20px;" required><br>
+</label>
 </div>
-<label for="period">Period Type</label><br>
+
+<div>
+
+  <label>Time To Elapse<br>
+<input type="text" name="timeToElapse" attribute="" style="width: 300px;height: 20px;"required>
+</label>
+</div>
+
+<div>
+<label>Period Type<br>
 <select id="period" name="periodType" attribute="data-period-type"  style="width: 300px;height: 20px;" required>
 <option value="" ></option>
   <option value="day">day</option>
   <option value="week">week</option>
   <option value="month">month</option>
-</select><br>
-<div class="input-field col s12">
-<label for="totalHospitalBeds" >Total Hospital Beds</label><br>
-<input type="text" name="totalHospitalBeds" attribute="data-total-hospital-beds" style="width: 300px;height: 20px;" required><br>
+</select>
+</label><br>
 </div>
-<div class="input-field col s12">
-  <label for="totalHospitalBeds" >Population</label><br>
+
+<div>
+<label>Total Hospital Beds<br>
+<input type="text" name="totalHospitalBeds" attribute="data-total-hospital-beds" style="width: 300px;height: 20px;" required><br>
+</label>
+</div>
+
+<div>
+  <label>Population<br>
   <input type="text" name="Population" attribute="data-total-hospital-beds" style="width: 300px;height: 20px;" required><br>
-  </div>
+</label>
+</div>
+
 <input type="submit" value="Data-Go-Estimate" attribute="Data-Go-Estimate" 
 style="color: maroon;width: 150px;height: 45px;font-size: 15px;margin-left: 70PX;margin-top: 10px;border-radius: 10px;" >
 <br>
